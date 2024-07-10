@@ -1,0 +1,137 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose an Artisan</title>
+    <link rel="stylesheet" href="artisan_new.css"/>
+
+</head>
+<body>
+   <div id="main-container">
+    <div id="page-head">
+        <div id="close-btn">
+            <a href="index.html"><img src="icons/cross.png" height="100%"/></a>
+        </div>
+        <div id="distance">25 minutes away</div>
+    </div>
+    <div id="inner-container">
+        <div class="arrow-container left">
+            <div class="icon-container">
+                <img src="icons/left-chevron.png"/>
+            </div>
+        </div>
+
+        <div id="main-content">
+            <div id="artisan-info-container">
+                <div id="artisan-info-container-left">
+                    <div id="artisan-logo">
+                        <img src="imagezz/meko.jpg">
+                        <!-- <img {% if artisan.picture %} src="{{artisan.picture.url}}" {%endif%} alt=""> -->
+                    </div>
+                    <div id="artisan-info">
+                        <div class="name">Ezekiel Solomon</div>
+                        <div class="faint">Mechanic</div>
+                        
+                    </div>
+                </div>
+                <a class="hire-btn" href="#hire-section">Hire Artisan</a>
+                
+            </div>
+            <div id="artisan-description">
+                <!-- {{artisan.bio}} -->
+            </div>
+            <div id="artisan-content-container">
+                <div id="artisan-content-left">
+                    <div class="artisan-heading">Past Works</div>
+                    
+                    <div id="image-container">
+                        <!-- {% for image in works %} -->
+                        <div class="works">
+                            <img  class="works" src="imagezz/mec" alt="image">
+                        </div>
+                        <!-- {% endfor %} -->
+                    </div>
+                    
+                </div>
+                <div id="artisan-content-right">
+                    <div class="artisan-heading">Reviews (4.5)</div>
+                    <div id="reviews">
+                        <div class="review">
+                            <div class="review-top">
+                                <div class="reviewer-name">Ibrahim Oyiza</div>
+                                <div class="star-container">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png">
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                "I recently hired High-Performance to repaint the interior of my home, 
+                                and I couldn't be happier with the results. 
+                                Their attention to detail and precision are unmatched.
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-top">
+                                <div class="reviewer-name">Chinansa Joy</div>
+                                <div class="star-container">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png">
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                I've used  Ayo for several painting projects over the years, and they never disappoint. 
+                                Their reliability, attention to detail, and commitment to customer satisfaction are unmatched. 
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-top">
+                                <div class="reviewer-name">Isreal Solomon</div>
+                                <div class="star-container">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png">
+                                    <img src="icons/star.png}">
+                                    <img src="icons/star.png">
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                I consider myself lucky to have found Ayo for my mural project. 
+                                Their talent as a painter is exceptional – they transformed my boring wall into a masterpiece.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="hire-section">
+                    <div class="artisan-heading">Hire Artisan</div>
+                    <div class="hire-body">
+
+                        <h5>Price Starts from : <span>₦10,000</span></h5>
+                        
+                        <div class="caption">Payment will be made after work has been completed</div>
+    
+                        <a href="index.html" class="artisan-btn">Book service</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            
+        </div>
+
+        <div class="arrow-container right">
+            <div class="icon-container">
+                <img src="icons/right-chevron.png"/>
+            </div>
+        </div>
+    </div>
+   </div> 
+</body>
+</html>

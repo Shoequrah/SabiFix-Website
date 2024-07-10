@@ -1,0 +1,41 @@
+<!-- {%load static%} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <div class="box1">
+                <div id="big-text">Welcome<br> Back!</div>
+            </div>
+            <div class="box2">
+                <div class="login_container">
+                    <form method="post">
+                        <!-- {% csrf_token %} -->
+                        <h3>Login</h3>
+                        <!-- {% if error %}<h6>{{error}}</h6>{% endif %} -->
+                        <p id="welcome-text">Welcome Back Please Login to your account</p>
+                        <label>User Name</label>
+                        <p><input type="text" name="username" placeholder="Enter your name"></input></p>
+                    
+                        <label>Password</label>
+                        <p><input name="password" type="password"></input></p>
+                        <button class="Login_button">Login</button>
+                    </form>
+                    
+                </div>
+                <div class="signup">
+                    <p>New User?<p>
+                    <a href="signup.html">Signup</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

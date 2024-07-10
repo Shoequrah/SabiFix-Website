@@ -1,0 +1,78 @@
+<!-- {%load static%}ss -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.css"/>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <div class="box1">
+                <div id="big-text">
+                    <img class="logo" src="imagezz/sabilogo.png">
+                    <p>Onboarding</p> 
+                </div>
+            </div>
+            <div class="box2">
+                <div class="login_container">
+                    <div class="Artisan_signup">
+                        <button class="art user" onclick="toogleRegistrationPage(0)">Sign up as a User</button>
+                        <button class="art" onclick="toogleRegistrationPage(1)">Sign up as an Artisan</button>
+                    </div>
+                    <!-- User Form -->
+                    <div class="form active-form">
+                        <label>Full Name</label>
+                        <p><input type="text" placeholder="Enter your name"></input></p>
+                    
+                        <label>Email Address</label>
+                        <p><input type="text" placeholder="Enter your email address"></input></p>
+
+                        <label>Mobile No</label>
+                        <p><input type="text" placeholder="Enter your mobile no"></input></p>
+
+                        <label>Home Address</label>
+                        <p><input type="text" placeholder="Enter your home address"></input></p>
+
+                        <label>State</label>
+                        <p><input type="text" placeholder="Enter your state"></input></p>
+
+
+                        <p class="Policy">You are agreeing to the <span>Terms of Services</span>
+                        and <span>Privacy Policy</span></p>
+                        <button class="signup_button">Register</button>
+                    </div>
+
+                    <!-- Artisan Form -->
+                    <div class="form">
+                        <label>Full Name</label>
+                        <p><input type="text" name="name" placeholder="Enter your name"></input></p>
+                    
+                        <label>Workshop Address</label>
+                        <p><input type="text" name="address" placeholder="Enter your address"></input></p>
+
+                        <label>Mobile No</label>
+                        <p><input type="text" name="number" placeholder="Enter your mobile no"></input></p>
+
+                        <label>Years of Experience</label>
+                        <p><input type="text"  name="experience" placeholder="Enter your years of Experience"></input></p>
+
+                        <label>Skill</label>
+                        <p><input type="text" name="skill" placeholder="Enter your location"></input></p>
+                    </div>
+
+
+                </div>
+                <div class="login">
+                    <p>Already a member?<p>
+                    <a href="login.html"><h4>Login</h4></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

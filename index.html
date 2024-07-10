@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisans Webpage</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+  <div id="top" style="background-image: url(imagezz/section.jpg)">
+    <div id="navbar">
+
+      <div class="box">
+          
+          <div class="logo">
+            <img class="logoo" src="imagezz/sabi.png">
+          </div>
+      </div>
+  
+      <div class="box"> 
+          <div class="page">Home</div>
+         <a class="page"   href=""></a>
+          <div class="page">Artisans</div>
+         <a class="page"   href=""></a>
+         <a  class="page" href="#service_form">Book Service</a>
+         <a class="page"   href=""></a>
+      </div>
+  
+      <div class="box">
+        
+          <a href="signup.html" class="faq">Become an Artisan</a>
+          <!-- {%if user.is_authenticated%} -->
+          <a href="{% url 'signout'%}" class="Register"> Sign Out </a>
+          <!-- {% else %}
+            class="Register"> Sign In </a>
+          {%endif%} -->
+      </div>
+      
+   </div>
+ 
+   <div id="Hero_section">
+    
+      <div class="homepage_pix">
+
+          <div class="img">
+              <h3> Hire <span>Certified</span> Skilled
+              Workers in <span>Minutes</span>,
+              not <span>Weeks</span></h3>
+              <p id="subtitle">Find an Artisan near you now!</p>
+              <div id="Buttons">
+                  <a href="signup.html" class="Hire_pro"> Hire a Pro</a>
+              </div>
+
+          </div>          
+      </div>   
+    </div>
+
+  </div>
+ <div id="Services_box">
+
+  <div id="information_box">
+
+  </div>
+
+
+    <div class="Services_text">
+        <div id="service_text_container">
+          <h4 id="service_head">Powering <span>business</span> with top-skilled workers</h4>
+          <p>Experience the Difference of Working with Top Skilled Workers! In today's fast-paced business landscape, having the right talent can make all the difference.
+             That's where we come in. Our team of top skilled workers is here to help you tackle your toughest challenges and achieve your boldest goals. </p>
+        </div>
+        
+        <div class="Artisans">
+            <div class="Services">
+              <img src="imagezz/mechanicc.jpg" width="100%" height="100%">
+            </div>
+            <div class="Services" width="100%" height="100%">
+              <img src="imagezz/plum.jpg" width="100%" height="100%">
+            </div>
+            <div class="Services" width="100%" height="100%">
+              <img src="imagezz/ne.jpg"100%" height="100%">
+            </div> 
+            <div class="Services" width="100%" height="100%">
+              <img src="imagezz/painter 2.jpg" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+
+ </div>
+
+ <div class="form_service" id="service_form">
+  <div class="book">
+    <h1>Book an <span>Artisan</span> here! </h1>
+    <p>Unlock Your Business's Potential with a High-Performance Team! 
+      Your business is only as strong as the people behind it</p>
+  </div>
+  <div class="forms">
+    <div class="form_box">
+      <form method="post" action="artisan_new.html" enctype="multipart/form-data">
+        <!-- {% csrf_token %} -->
+        <label>What Service are you looking for?</label>
+        <p><select name="service">
+          <option value="Mechanic"> Mechanic</option>
+          <option value="Plumber">Plumber</option>
+          <option value="Electrician">Electrician</option>
+          <option value="Painter">Painter</option>
+      </select>
+      </p>
+        <label>Tell us about what you want us to fix</label>
+        <p><textarea type="text" name="description" placeholder="Enter your description"></textarea></p>
+    
+        <label><Picture>Picture</Picture></label>
+        <p><input type="file" name="picture"></input></p>
+        <button class="proceed_button">Proceed</button>
+        <!-- <a href="artisan_new.html" button class="proceed_button">Proceed</button></a> -->
+      </form>
+         
+    </div>
+  </div>
+  
+</div>
+ 
+<div id="Testimonies">
+    <p class="testimonies-heading">TESTIMONIALS</p>
+    <p>What Our Client Say</p>
+    <div class="Clients">
+        <div class="person">
+          <div class="profile">
+            <img class="male" src="imagezz/male.jpg">
+            <div class="user-profile">
+              <h5 class="name">Martin Luke </h5>
+              <div class="star-container">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+              </div>
+            </div>
+            </div>
+          <p>Hiring an electrician through this platform was a breeze! The artisan was prompt, professional, and fixed my electrical issue in no time. 
+            I highly recommend this service.</p>
+         
+        </div>
+        <div class="person">
+          <div class="profile">
+            <img class="male" src="imagezz/female2.jpg"> 
+            <div class="user-profile">
+              <h5 class="name">Elizabeth John </h5>
+              <div class="star-container">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+              </div>
+            </div>
+          </div>
+            <p>I was hesitant to hire an artisan online, but after reading the reviews, I decided to give it a try. I'm so glad I did! 
+              The man I hired was friendly, skilled, and fixed it in no time. </p>
+        </div>
+        <div class="person">
+          <div class="profile">
+            <img class="male" src="imagezz/maleeeeee.jpg"> 
+            <div class="user-profile">
+              <h5 class="name">Ibrahim Salem </h5>
+              <div class="star-container">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+                <img class="star" src="imagezz/star.png" width="20%" height="20%">
+              </div>
+            </div>
+      
+          </div>
+            <p>I was in a pinch and needed a mechanic urgently. 
+              Thankfully, I found one on this platform. He arrived promptly, diagnosed the issue quickly. Great service!</p>
+            
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Questions -->
+  <section class="text-center text-dark p-5">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+    </div>
+<div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne">
+        What Materials do you use for your Products?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+         We source for the best materials and equipment in the best market in town to fix all issues. Putting our clients first is key for us.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false">
+          How do i book an Artisan?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+         Simply sign up as a user on our website and you can connect to all artisans of your choice.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Can i visit your workshop?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Yes, you can visit our workshop, workshop varies with artisan, click on the artisans profile you want and you will get his workshop address
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            What Payment Methods do you Accept?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            We only accept cash payments
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<div id="footer">
+  <div id="footer_container">
+    <div class="footer_details">
+      <h6>Etech</h6>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tenetur voluptatem voluptatum</p>
+      <div class="icons">
+      <a href="#"><i class="bi bi-twitter text-dark m-2"></i></a>
+      <a href="#"><i class="bi bi-instagram text-dark m-2"></i></a>
+      <a href="#"><i class="bi bi-linkedin text-dark m-2"></i></a>
+      <a href="#"><i class="bi bi-facebook text-dark m-2"></i></a>
+      </div>
+    </div>
+    <div class="footer_details">
+      <h6>Support</h6>
+      <p>sabifix@gmail.com</p>
+      <p>www.sabifix.com</p>
+    </div>
+    <div class="footer_details">
+      <h6>Company</h6>
+      <p>SabiFix Limited</p>
+    </div>
+    <div class="footer_details">
+      <h6>Contact Us</h6>
+      <p>0805564556, 08094645728</p>
+      <p>08705272287, 080333000011</p>
+    </div>
+  </div>
+  
+</div>
+
+
+</body>
+</html>

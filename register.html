@@ -1,0 +1,20 @@
+{%load static%}
+
+{%block content%}
+<h3>User Registration</h3>
+{%if Error%}
+{{Error}}
+{%endif%}
+<form action="" method="POST">
+    {%csrf_token%}
+    {{form.as_p}}
+    <label>username</label><br>
+    <input type="text" name="username"><br>
+    <label>password</label><br>
+    <input type="password" name="password"><br>
+    <button type="submit" name="submit">Login</button>
+</form>
+<!-- {% if error_message %}
+   <p>{{ error_message }}</p> -->
+{%endblock%}
+
